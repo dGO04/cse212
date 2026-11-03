@@ -1,4 +1,6 @@
-﻿Console.WriteLine("\n======================\nSorting\n======================");
+﻿using System;
+
+Console.WriteLine("\n======================\nSorting\n======================");
 Sorting.Run();
 
 Console.WriteLine("\n======================\nStandardDeviation\n======================");

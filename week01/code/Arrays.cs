@@ -13,7 +13,20 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        return []; // replace this return statement with your own
+        //Create a list to save all multiples
+        var multiples = new double[length];
+
+        //Run a for loop for the number of multiples requested
+        for (int i = 1; i <= length; i++)
+        {
+            //Multiply the number by the current multiplier
+            double multiple = number * i;
+            //Save the result into the list
+            multiples[i - 1] = multiple;
+
+        }
+
+        return multiples; // replace this return statement with your own
     }
 
     /// <summary>
@@ -29,5 +42,19 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
+
+        //For loop for the amount of rotations desired
+        for(int i = 0; i < amount; i++)
+        {
+            //Get the index for the last number
+            int lastIndex = data.Count - 1;
+            //Save last number before removing it
+            int lastNumber = data[lastIndex];
+            //Remove last number
+            data.RemoveAt(lastIndex);
+            //Add last number into the beginning of the list
+            data.Insert(0, lastNumber);
+        }
+        
     }
 }
